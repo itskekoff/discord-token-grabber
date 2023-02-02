@@ -32,7 +32,7 @@ def start():
             decrypted_pass = cipher.decrypt(payload)
             decrypted_pass = decrypted_pass[:-16].decode()
             return decrypted_pass
-        finally:
+        except:
             return f''
 
     def win_decrypt(encrypted_str: bytes) -> str:
