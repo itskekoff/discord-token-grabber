@@ -1,0 +1,6 @@
+psutil
+asyncio
+httpx
+requests
+asyncdiscord
+pycryptodome
