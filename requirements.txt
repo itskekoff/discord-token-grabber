@@ -1,6 +1,6 @@
 psutil
-asyncio
 httpx
 requests
 asyncdiscord
 pycryptodome
+pypiwin32
